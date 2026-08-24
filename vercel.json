@@ -1,11 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
-      "missing": [
-        { "type": "header", "key": "x-ghg-internal" }
-      ],
-      "destination": "https://myghgplatform.com/qr-skan/:path*",
+      "source": "/(.*)",
+      "destination": "https://myghgplatform.com/qr-skan/$1",
       "permanent": true
     }
   ]
